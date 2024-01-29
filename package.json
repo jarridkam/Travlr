@@ -1,6 +1,8 @@
 {
-  "name": "force",
-  "version": "0.0.0",
+  "name": "travlr",
+  "version": "1.0.0",
+  "description": "Travlr Getaways",
+  "author": "Jarrid Kamphenkel",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
