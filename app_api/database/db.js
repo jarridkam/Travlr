@@ -64,7 +64,7 @@ const gracefulShutdown = (msg, callback) => {
 
 connect();
 
-require('./models/travlr');
+require("./models/travlr");
 
 
 
