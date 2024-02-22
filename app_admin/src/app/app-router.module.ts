@@ -5,7 +5,7 @@ import { AddTripComponent } from './add-trip/add-trip.component';
 
 const routes: Routes =[
     { path: 'add-trip', component: AddTripComponent},
-    { path: '', component: TripListingComponent}
+    { path: '', component: TripListingComponent, pathMatch: 'full'}
 ]
 
 @NgModule({

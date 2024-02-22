@@ -53,7 +53,7 @@ const tripsAddTrip = async (req, res) => {
             resort: req.body.resort,
             perPerson: req.body.perPerson,
             image: req.body.image,
-            description: req.body.description,
+            description: req.body.description
         },
         (err, trip) =>{
         if (err) {
@@ -65,8 +65,8 @@ const tripsAddTrip = async (req, res) => {
                 .status(201)
                 .json(trip);
         }
-    }
-    )}
+    });
+}
 
 module.exports = {
    tripsList,

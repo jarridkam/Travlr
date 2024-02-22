@@ -3,6 +3,7 @@ import { Router } from "@angular/router"
 
 import { TripDataService } from '../services/trip-data.service';
 import { Trip } from '../models/trip';
+
 @Component({
   selector: 'app-trip-listing',
   templateUrl: './trip-listing.component.html',
@@ -31,8 +32,7 @@ export class TripListingComponent implements OnInit {
     this.tripDataService
       .getTrips()
       .then(foundTrips => {
-        this.message = foundTrips.length > 0 ? ''
-          : 'No trips found';
+        this.message = foundTrips.length > 0 ? '' : 'No trips found';
         this.trips = foundTrips;
       });
   }
