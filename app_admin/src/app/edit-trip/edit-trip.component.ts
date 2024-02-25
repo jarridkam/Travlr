@@ -41,7 +41,6 @@ export class EditTripComponent implements OnInit {
       image: ['', Validators.required],
       description: ['', Validators.required],
       })
-     
 
     console.log('EditTripComponent#onInit calling TripDataService#getTrip(\'' + tripCode + '\')');
 
